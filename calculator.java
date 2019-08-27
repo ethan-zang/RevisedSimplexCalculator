@@ -12,7 +12,7 @@ public class calculator {
 
 		MatlabEngine eng = MatlabEngine.startMatlab();
 
-		//Calling MATLAB main.m function
+		//Calling MATLAB main.m function using above parameters
 		Object[] results = eng.feval(3,"main",a,b,c);
 
 		double optVal = (double)results[0];
